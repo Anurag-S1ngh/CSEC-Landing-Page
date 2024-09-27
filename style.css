@@ -14,18 +14,18 @@ main{
 
 :root {
     --bg: #ecedee;
-    --base-font-size: 16px; /* This can be adjusted based on design requirements */
+    --base-font-size: 16px;
     --Mf: 'Sora', sans-serif;;
     --mf: "Open Sans", sans-serif;
 
-    --font-size-h1: 3.5rem;  /* 40px */
-    --font-size-h2: 2.25rem; /* 36px */
-    --font-size-h3: 2rem;    /* 32px */
-    --font-size-h4: 1.75rem; /* 28px */
+    --font-size-h1: 3.5rem;  
+    --font-size-h2: 2.25rem; 
+    --font-size-h3: 2rem;    
+    --font-size-h4: 1.75rem; 
     --font-size-h5: 1.5rem
     
-    --font-size-p: 1.25rem;  /* 20px */
-    --font-size-a: 1.25rem;  /* 20px */
+    --font-size-p: 1.25rem;  
+    --font-size-a: 1.25rem;  
 }
 
 body {
@@ -94,6 +94,11 @@ header {
     border-radius: 0.6rem;
 }
 
+.sign:hover{
+    background-color: black;
+    color: white;
+}
+
 .started{
     background-color: black;
     padding: 8px 10px;
@@ -150,7 +155,7 @@ header {
 .title_box p{
     width: 700px;
     color: rgba(255, 255, 255, 0.6);
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     font-size: var(--font-size-p);
 }
 
@@ -168,10 +173,10 @@ header {
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.3);
     box-shadow: 0 0 1000px hsla(0, 0%, 100%, 0.5);
-    position: absolute; /* Position it absolutely */
-    top: -25%; /* Move it 50% from the top */
-    left: 50%; /* Move it 50% from the left */
-    transform: translate(-50%, -50%); /* Center it */
+    position: absolute; 
+    top: -25%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
     filter: blur(200px);
 }
 
@@ -179,14 +184,14 @@ button {
     font-size: var(--font-size-h5);
     font-family: var(--Mf);
     padding: 10px 15px;
-    border-radius: 12px; /* Rounded corners for the button */
-    border: none; /* Remove the default border */
+    border-radius: 12px;  
+    border: none; 
     cursor: pointer;
-    background-color: #2a2a2a; /* Slightly lighter than black for the button */
+    background-color: #2a2a2a;  
     box-shadow: 
-        5px 5px 10px rgba(0, 0, 0, 0.4), /* Outer shadow */
-        -5px -5px 10px rgba(255, 255, 255, 0.2); /* Inner shadow */
-    transition: all 0.3s ease; /* Smooth transition for hover effect */
+        5px 5px 10px rgba(0, 0, 0, 0.4),  
+        -5px -5px 10px rgba(255, 255, 255, 0.2); 
+    transition: all 0.3s ease; 
 }
 
 
@@ -235,7 +240,7 @@ button {
 }
 
 .f4{
-    top: 25%;
+    top: 20%;
     left: 20%;
     transform: rotate(15deg);
 }
@@ -275,32 +280,22 @@ button {
     transform: scale(1.2);
 }
 
-/* Media Queries for smaller screens */
-@media (max-width: 1024px) {
-    :root {
-        --font-size-h1: 2rem;  /* 32px */
-        --font-size-h2: 1.75rem; /* 28px */
-        --font-size-h3: 1.5rem; /* 24px */
-        --font-size-h4: 1.25rem; /* 20px */
-        --font-size-p: 1.125rem; /* 18px */
-        --font-size-a: 1.125rem; /* 18px */
-    }
-}
-
 @media (max-width: 768px) {
     :root {
-        --font-size-h1: 1.75rem; /* 28px */
-        --font-size-h2: 1.5rem;  /* 24px */
-        --font-size-h3: 1.25rem; /* 20px */
-        --font-size-h4: 1rem;    /* 16px */
-        --font-size-p: 1rem;     /* 16px */
-        --font-size-a: 0.8rem;     /* 16px */
+        --font-size-h1: 1.75rem; 
+        --font-size-h2: 1.5rem;  
+        --font-size-h3: 1.25rem; 
+        --font-size-h4: 1rem;    
+        --font-size-p: 0.8rem;     
+        --font-size-a: 0.8rem;     
     }
-}
 
-@media (max-width:577px) {
     .main_img img{
-        height: 300px;
+        height: 250px;
+    }
+
+    .title_box{
+        padding-block: 5rem;
     }
 
     .title_box p{
@@ -313,26 +308,73 @@ button {
         display: none;
     }
     .f1{
-        top: 10%;
-        left: 5%;
+        top: 13%;
+        left: 12%;
     }
     .f2{
-        top: 15%;
+        top: 16%;
         right: 8%;
     }
     .f3{
-        top: 30%;
+        top: 35%;
         right: 10%;
     }
     .f4{
-        top: 25%;
+        top: 31%;
         left: 5%;
     }
     .float{
-        height: 30px;
+        height: 35px;
+    }
+
+}
+
+@media (max-width:577px) {
+    .main_img img{
+        height: 250px;
+    }
+
+    .title_box p{
+        width: 300px;
+    }
+    .login_container a{
+        font-size: var(--font-size-p);
+    }
+    .login_container{
+        display: none;
+    }
+    .f1{
+        top: 8%;
+        left: 5%;
+    }
+    .f2{
+        top: 10%;
+        right: 8%;
+    }
+    .f3{
+        top: 22%;
+        right: 7%;
+    }
+    .f4{
+        top: 21%;
+        left: 5%;
+    }
+    .float{
+        height: 25px;
+    }
+
+    .radial{
+        height: 500px;
+        width: 500px;
     }
 }
 
 .btn:hover{
     transform: scale(1.2);
+}
+
+button:hover {
+    transform: scale(1.065) !important;
+    box-shadow: 7px 7px 12px rgba(0, 0, 0, 0.4),  
+                -7px -7px 12px rgba(255, 255, 255, 0.2);
 }
