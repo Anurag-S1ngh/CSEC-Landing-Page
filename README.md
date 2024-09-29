@@ -1,6 +1,6 @@
 # CSEC Landing Page
 
-A landing page for the Computer Science Engineers' Club (CSEC) at NIT Hamirpur, showcasing the club's tech events and hackathons. Created in just couple of hours at 5 AM, it offers a clean, modern interface with interactive animations.
+A landing page for the Computer Science Engineers' Club (CSEC) at NIT Hamirpur, showcasing the club's tech events and hackathons. Created in just couple of hours at 5 AM in the morning, it offers a clean, modern interface with interactive animations.
 
 ## 🚀 Demo
 
